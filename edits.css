@@ -1,0 +1,331 @@
+body {
+    background-color: #f6f6f6;
+}
+
+::selection {
+    background: #fcb8bc;
+}
+
+/* Single post */
+.entry-title {
+    text-transform: uppercase;
+}
+
+/* Header */
+.site-header .nav1 .main-menu .sub-menu a {
+    background: #000;
+}
+
+.site-header .nav1 .main-menu > li > .sub-menu::before {
+    border-color: transparent transparent #000 transparent;
+}
+
+/* Footer */
+#colophon {
+    background: #000;
+    color: #fff;
+}
+
+.site-info,
+.site-footer a,
+.site-footer a:hover,
+#colophon .social-navigation a {
+    color: #fff;
+}
+
+#colophon .footer-branding .wrapper {
+    border: 0;
+    display: block;
+}
+
+.site-footer .footer-branding .footer-logo-link {
+    display: inline-block;
+}
+
+.site-footer .footer-branding .footer-logo-link {
+    max-width: 55px;
+}
+
+/* Donate block: hide 'Annual' tab */
+.wp-block-newspack-blocks-donate__frequency:nth-child(3) {
+    display: none;
+}
+
+@media (max-width: 781px) {
+    .entry .wp-block-newspack-blocks-donate__frequencies {
+        padding-top: calc(2 * (.76rem + 1.6em + 1px));
+    }
+}
+
+@media (min-width: 782px) {
+    .wp-block-newspack-blocks-donate__frequency:nth-of-type(1) .donation-frequency-label,
+    .wp-block-newspack-blocks-donate__frequency:nth-of-type(2) .donation-frequency-label {
+        width: 50%;
+    }
+
+    .entry-content .wp-block-newspack-blocks-donate__frequency:nth-of-type(2) .donation-frequency-label {
+        border-right: 0;
+        left: 50%;
+    }
+}
+
+
+@media (max-width: 599px) {
+    /* Homepage Posts: featured images wide on mobile */
+    .entry .wpnbha.image-aligntop .post-thumbnail, .entry .wpnbha.mobile-stack.image-alignleft .post-thumbnail, .entry .wpnbha.mobile-stack.image-alignright .post-thumbnail {
+        margin-left: -30px;
+        margin-right: -30px;
+        width: calc(100% + 60px);
+    }
+
+    /* Homepage Posts: title size */
+    .entry .wpnbha.ts-7 article .entry-title, .entry .wpnbha.ts-8 article .entry-title, .entry .wpnbha.ts-9 article .entry-title, .wpnbha.ts-10 article .entry-title {
+        font-size: 1.7em;
+    }
+}
+
+/* Temp: fix for gap at top of homepage */
+.newspack-front-page.hide-homepage-title .entry-content > amp-analytics + .wp-block-group.alignfull {
+    margin-top: 0;
+}
+
+@media (min-width: 782px) {
+    .newspack-front-page.hide-homepage-title .entry-content > amp-analytics + .wp-block-group.alignfull {
+        margin-top: calc(-.5rem - 1px);
+    }
+}
+
+.entry .entry-content > #newspack-lightbox-marker {
+    margin: 0;
+}
+
+/* Sidebar widgets */
+#secondary .widget-title {
+    border-bottom: 4px solid #F5333F;
+    padding-bottom: 0.4em
+}
+
+/* Widget - top posts */
+.widget_top-posts ul,
+.widget_recent_entries ul {
+    font-weight: bold;
+    list-style: none;
+    padding-left: 0;
+    text-transform: uppercase;
+}
+
+.widget_top-posts a,
+.widget_recent_entries a {
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+
+.widget_top-posts li:not(:last-child),
+.widget_recent_entries li:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1em;
+    margin-bottom: 1em
+}
+
+/* Widget - recent posts */
+
+
+/** Custom CSS by Mukhtar Ibrahim */
+
+/* Adds space between headline and article summary in single posts */
+div.newspack-post-subtitle {
+    margin-top: 20px;
+}
+
+/* Makes bylines and dates uppercase */
+span.byline {
+    text-transform: capitalize;
+}
+
+a.url.fn.n {
+    text-transform: uppercase;
+}
+
+time.entry-date.published {
+    text-transform: uppercase;
+}
+
+/* Tweaks the design/font of MailChimp sign up button */
+
+.wp-block-jetpack-mailchimp .components-placeholder button, input[type='button'], input[type='reset'], input[type='submit'] {
+    border-radius: 3px;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+
+.wp-block-jetpack-mailchimp input[type='email'] {
+    border: 1px solid #f5333f;
+    font-family: "Roboto Condensed", "Georgia", "Garamond", "Times New Roman", "serif";
+}
+
+.wp-block-newspack-blocks-donate.wpbnbd.tiered button, input[type='button'], input[type='reset'], input[type='submit'] {
+    width: 90%;
+    text-transform: uppercase;
+}
+
+
+.organic-profile-image.amp-wp-3a2d137 img.i-amphtml-fill-content.i-amphtml-replaced-content {
+    object-fit: cover;
+}
+
+
+/* Changes font of pull quote */
+
+.wp-block-pullquote, .wp-block-pullquote cite {
+    font-family: "IBM Plex Serif", "Georgia", "Garamond", "Times New Roman", "serif"
+}
+
+
+/** Custom CSS by Kobby Appiah */
+.newspack-front-page #content a, #colophon a {
+    transition: color 0.25s ease-out;
+    background: none;
+}
+
+.newspack-front-page #content a:hover, #content a:focus, #colophon a:hover, #colophon a:focus {
+    color: #f5333f !important;
+    text-decoration: underline;
+}
+
+.entry .byline {
+    text-transform: capitalize;
+}
+
+.entry .author {
+    text-transform: uppercase;
+    color: #f5333f;
+}
+
+.single .entry-title {
+    font-size: 1.3em;
+}
+
+.single .main-content a, .page .main-content a, .newspack-front-page .entry-wrapper > p a {
+    transition: color 0.25s ease-out;
+    text-decoration: none;
+    padding-bottom: 1px;
+    background: linear-gradient(to bottom, #f5333f, #f5333f) center bottom/100% 1px no-repeat transparent;
+}
+
+.single #content .main-content a:hover, .page #content .main-content a:hover, .newspack-front-page .entry-wrapper > p a:hover {
+    text-decoration: none;
+    color: #f5333f;
+}
+
+/* making an exception for the supporter info block with the custom background styling */
+.page #content .main-content .newspack-supporter-info > a {
+    background: none;
+}
+
+@media only screen and (min-width: 600px) {
+    .single .entry-title {
+        font-size: 1.6em;
+    }
+}
+
+@media only screen and (min-width: 782px) {
+    .single .entry-title {
+        font-size: 2.2em;
+    }
+}
+
+@media only screen and (min-width: 1168px) {
+    .single .entry-title {
+        font-size: 2.8em;
+    }
+}
+
+header#masthead .wrapper {
+    max-width: 1680px;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+@media (max-width: 599px) {
+    header#masthead .wrapper {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+footer.site-footer .imprint {
+    display: none;
+}
+
+@media screen and (min-width: 782px) {
+
+    footer.site-footer .wrapper {
+        max-width: 40rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer.site-footer .footer-branding .wrapper {
+        display: block;
+    }
+
+    footer.site-footer .footer-branding .footer-logo-link, footer.site-footer .footer-branding .social-navigation {
+        display: block;
+    }
+
+    footer.site-footer .footer-branding .footer-logo-link {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
+    }
+
+    footer.site-footer .footer-branding .footer-logo-link img {
+        width: 10rem;
+    }
+
+    footer.site-footer .footer-branding .social-navigation ul {
+        justify-content: center;
+    }
+}
+
+/* Front Page */
+.newspack-front-page .entry .entry-content .sj-edits--home-hero .wp-block-group__inner-container:not(.alignfull):not(.alignwide) {
+    max-width: 1500px;
+}
+
+@media screen and (min-width: 600px) {
+    .newspack-front-page .hero-article .article-section-title {
+        position: relative;
+        margin-left: calc(50% + .6rem);
+        top: 32px;
+    }
+
+    .newspack-front-page .hero-article .entry-wrapper {
+        position: relative;
+        top: 32px;
+    }
+
+    .newspack-front-page .hero-article .entry-wrapper .entry-meta {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .newspack-front-page .hero-article .entry-wrapper {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .newspack-front-page .wp-block-group.has-background {
+        padding-left: calc(5% + 3px);
+        padding-right: calc(5% + 3px);
+    }
+}
+
+/* end custom css */
+
